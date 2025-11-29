@@ -123,14 +123,20 @@ section {
 
 .about img{
     width: 25vw;
-    border-radius: 50%;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 25%;
+    /* box-shadow: 10px 10px gold; */
+    /* filter: grayscale(100%); */
+    transition: 0.4s ease-in-out;
     /* -webkit-transform: scaleX(-2) */
 }
 
 .about img:hover {
-    opacity: 50%;
-    filter: invert();
+    /* opacity: 50%; */
+    /* filter: invert(); */
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.6s ease-in-out;
+    filter: hue-rotate(360deg);
+
 }
 
 .info-box {
@@ -188,11 +194,180 @@ section {
 }
 
 .socials i {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: rgb(21, 21, 21);
+    opacity: 60%
+}
+
+.socials i:hover {
+    transform: scale(1.25);
+    color: black;
+    opacity: 100%;
+}
+
+.socials i:hover .socialname{
+    opacity: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+a:link, a:visited {
+    
+}
+
+a:hover, a:active {
+
+}
+
+.socialname {
+    opacity: 0%;
+    cursor: default;
+}
+
+.socialname:hover {
+
+}
+
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.experience img {
+    width: 24vw;
+    border-radius: 5rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.experience img:hover {
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.grid-card {
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
-.socials i:hover {
-    transform: scale(1.1);
+.grid-card:hover {
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}
+
+.grid-card i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid-card span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(237, 107, 237), rgb(113, 166, 199));
+    background-clip: text;
+    color: transparent;
+}
+
+.grid-card-labotomy {
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: -175px -20px;
+}
+
+.grid-card-labotomy:hover {
+    background-image: url("/img/barbara.gif");
+    color: white;
+    transition: 0.2s ease-in-out;
+    transform: scale(2);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(237, 107, 237), rgb(113, 166, 199));
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+
+.project-card img {
+    height: 20vw;
+    border-radius: 1rem;
+}
+
+.project-card:hover .btn{
+    border: 2px solid white;
+    color: white;
+}
+
+.project-card:hover .btn:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.project-card h3 {
+    font-size: 2rem;
+    font-weight: 500;
 }
