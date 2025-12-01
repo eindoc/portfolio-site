@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -27,9 +26,6 @@
             <li>
                 <a href="#projects">Projects</a>
             </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
         </ul>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
@@ -45,12 +41,13 @@
                 <div class="text">
                     <h3>Hello, I'm</h3>
                     <h1>Michael <br>Herd</h1>
-                    <span>Frontend and Game Developer</span>
+                    <span>Developer of Things</span>
                 </div>
-
+                <p>Kansas City, USA</p>
                 <div class="btn-group">
                     <!-- <div class="btn">Download CV</div> -->
-                    <div class="btn">Contact</div>
+
+                    <button class="btn" id="email-btn" onclick="copyToClipboard()">Copy Email to Clipboard</button>
                 </div>
 
                 <div class="socials">
@@ -74,21 +71,21 @@
             <div class="grid">
                 <div class="grid-card">
                     <i class="fa-solid fa-code"></i>
-                    <span>Frontend Development</span>
-                    <h3>70 years</h3>
-                    <p>I'm actually Al Gore. I invented all of this.</p>
+                    <span>Programming</span>
+                    <h3>1 year (dedicated)</h3>
+                    <p>HTML/CSS, JavaScript, C# with Unity, Java, GDScript, and Python are what I've actually built things in. I use whichever make sense for the project. Made various projects over 20 years, but it's now my focus.</p>
                 </div>
                 <div class="grid-card">
                     <i class="fa-solid fa-microchip"></i>
                     <span>Tech Support</span>
-                    <h3>30 years, except actually</h3>
-                    <p>4 + 30 = 34 and that's how old I am ohyeah</p>
+                    <h3>4 years</h3>
+                    <p>Provided in-store support for phones, tablets, PC's, laptops, and gaming consoles. Also taught weekly classes on Android and Samsung phones for two of those years. One year of physical repairs. Most recently ran the tech department at Target, providing support for both customers and coworkers.</p>
                 </div>
                 <div class="grid-card">
                     <i class="fa-solid fa-clapperboard"></i>
-                    <span>Video Production</span>
-                    <h3>11 years</h3>
-                    <p>Ran a YouTube channel for 4 years, shot and edited 100+ videos.</p>
+                    <span>Video/Audio Production and Graphic Design</span>
+                    <h3>8 years</h3>
+                    <p>Produced and edited 100+ videos for YouTube, ranging from music videos to gaming content. A lifetime of experience with Photoshop, from simple photo edits to keyframe animations. YouTube thumbnails, video FX, as well as emotes and art for Twitch streamers.</p>
                 </div>
                 <div class="grid-card-labotomy">
                     <i class="fa-solid fa-brain"></i>
@@ -108,45 +105,25 @@
         <div class="projects-grid">
 
             <div class="project-card">
-                <img src="img/notldposter.jpg" alt="">
-                <h3>Project X</h3>
-                <p>booty tooty fruity snooty</p>
+                <img src="img/ianarcadebordtennis.gif" alt="">
+                <h3>Ian's Arcade</h3>
+                <p>Pixel arcade project for smaller games. Eventually I'll make a more immersive one if I want to release it. Being made in Godot.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repot</div>
+                    <div class="btn"><a href="https://eindoc.itch.io/ians-arcade-project">Live Demo</a></div>
+                    <div class="btn"><a href="https://github.com/eindoc/2KEEN">Github Repot</a></div>
 
                 </div>
             </div>
             <div class="project-card">
-                <img src="img/notldposter.jpg" alt="">
-                <h3>Project Y</h3>
-                <p>booty tooty fruity snooty</p>
+                <img src="img/ponkle.gif" alt="">
+                <h3>Plonko</h3>
+                <p>My first project with JavaScript. I plan to add pinball mechanics and a ball launcher, but I may just remake it in Unity; quicker to test and iterate.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repot</div>
+                    <div class="btn"><a href="https://eindoc.itch.io/game2">Live Demo</a></div>
+                    <div class="btn"><a href="https://github.com/eindoc/game2">Github Repot</a></div>
 
                 </div>
             </div>
-            <div class="project-card">
-                <img src="img/notldposter.jpg" alt="">
-                <h3>Project T</h3>
-                <p>booty tooty fruity snooty</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repot</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="input-box">
-            <h2 class="section-title">Contact Me</h2>
-
-            <div class="input">
-                <input type="text" placeholder="example@gmail.com">
-                <i class="fa-regular fa-paper-plane"></i>
-            </div>
-            <div class="btn">Submit</div>
         </div>
     </section>
 
@@ -165,11 +142,11 @@
                 
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#about">Contact</a>
             </li>
         </ul>
 
-        <p class="copyright">c All Rights Reserved | Michael Herd</p>
+        <p class="copyright">&#169; All Rights Reserved | Michael Herd &#9851;</p>
     </footer>
 
     <script src="script.js"></script>
