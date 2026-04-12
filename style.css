@@ -40,30 +40,30 @@ body::before {
     position: fixed;
     top: 10%;
     left: -10%;
-    width: 50%;
-    height: 75%;
+    width: 150%;
+    height: 90%;
     background-image: url(img/ianduck.png);
-    background-size: cover;
-
+    /* background-size: auto 100%; */
+    background-repeat: no-repeat;
     opacity: 0.1;
     z-index: -1;
 }
 
 
-/* Header styles for fixed bar */
+/* Header styles for nav bar */
 header {
-    position: fixed;
-    top: 0.5rem;
-    left: 50%;
+    position: absolute;
+    top: 3%;
+    right: 5%;
     transform: translate(-50%);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    /* justify-content: center; */
+    gap: 2rem;
     background-color: #2b2b2b;
     /* backdrop-filter: blur(8px); */
     /* color: rgb(250, 242, 232); */
-    /* padding: 0.5rem 1.5rem; */
+    padding: 0.5rem 1.5rem;
     border-radius: 0.25rem;
     z-index: 1000;
     font-family: MyFont, "Roboto", sans-serif;
@@ -72,25 +72,25 @@ header {
 
 .logo {
     /* color: rgb(250, 242, 232); */
-    color: #fdf2f2;
+    /* color: #fdf2f2;
     font-size: 1.3rem;
     font-weight: 600;
     text-wrap: nowrap;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; */
 }
 
 .logo:hover {
-    transform: scale(1.16);
+    /* transform: scale(1.50); */
 }
 
 .logo img {
-    width: 2.5rem;
-    transition: 0.3s ease-in-out;
+    /* width: 4.5rem; */
+    /* transition: 0.3s ease-in-out; */
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 li a {
@@ -141,7 +141,7 @@ li a:hover::before {
 
 section {
     min-height: 100vh;
-    padding: 8rem 12%;
+    padding: 1rem 1rem;
     width: 100%;
     position: relative;
 }
@@ -156,7 +156,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    /* gap: 10rem; */
     color:#2b2b2b
 }
 
@@ -194,12 +194,12 @@ section {
     font-family: MyFont, "Roboto", sans-serif;
     color: #fec107;
     background-color: #2b2b2b;
-    border-radius: 0.25rem;;
+    border-radius: 0.25rem;
     padding: 1rem;
 }
 
 
-                      /* colorful title part */
+                      /* colorful job title part */
 .info-box span {
     background: linear-gradient(to right, #ff55da, #fec107, #00fffb);
     border-radius: 0.25rem;
@@ -436,6 +436,17 @@ body .grid-card:hover {
     top: 50%;
     left: 10px;
     transform: translate(50%, -50%);
+}
+
+p.ducksname {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    transform: translate(0, -50%);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2b2b2b;
+    opacity: 0.25;
 }
 
 footer {

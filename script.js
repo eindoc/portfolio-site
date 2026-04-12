@@ -19,4 +19,3 @@ function copyToClipboard() {
         alert('Email: mherd.work@gmail.com');
     });
 }
-
