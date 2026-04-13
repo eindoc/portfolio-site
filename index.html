@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Michael Portfolioliolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/svg+xml" href="img/ianduck.png">
 </head>
 <body>
     
@@ -16,16 +18,16 @@
         <!-- <a href="#" class="logo"><img src="img/ianduck.png" alt="Logo"></a> -->
 
 
-        <ul class="nav-links">
+        <!-- <ul class="nav-links">
             <li>
                 <a href="#projects">Projects</a>
             </li>
             <li>
                 <a href="#experience">Other Work</a>
             </li>
-        </ul>
+        </ul> -->
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
 
         <!-- <button class="visit-btn">Visit Github</button> -->
     </header>
@@ -63,26 +65,68 @@
         <h2 class="section-title">Recent Projects</h2>
 
         <div class="projects-grid">
+            <!-- details for click-to-expand project cards -->
+            <details>
+                <summary>
+                    <img src="img/ianduckpixel.png" alt="Ian's Arcade logo">Ian's Arcade
+                    <h6>A multi-game project being made in Godot.</h6>
+                </summary>
 
-            <div class="project-card">
-                <img src="img/ianarcadebordtennis.gif" alt="">
-                <h3>Ian's Arcade</h3>
-                <p>Pixel arcade project for smaller games. Eventually I'll make a more immersive one if I want to release it. Being made in Godot.</p>
-                <div class="btn-group">
-                    <div class="btn"><a href="https://eindoc.itch.io/ians-arcade-project">Live Demo</a></div>
-                    <div class="btn"><a href="https://github.com/eindoc/2KEEN-Game">Github Repot</a></div>
-
+                <br>
+                <!-- project details -->
+                <div class="project-card">
+                    <img src="img/ianarcadebordtennis.gif" alt="">
+                    <h3>Ian's Arcade</h3>
+                    <p>I'm building an arcade project as a fun way to learn different game mechanics and design.</p>
+                <div class="btn-group-2">
+                    <div class="btn2"><a href="https://eindoc.itch.io/ians-arcade-project">Live Demo</a></div>
+                    <div class="btn2"><a href="https://github.com/eindoc/2KEEN-Game">Github Repot</a></div>
                 </div>
+                <h2>Tools Used:</h2>
+                <div class="tools-logos">
+                    <div>
+                        <img src="img/godot-icon.svg" alt="Godot Logo" class="godot-logo">
+                        <p>Godot</p>
+                    </div>
+                    <div>
+                        <img src="img/aseprite-logo.svg" alt="Aseprite Logo" class="aseprite-logo">
+                        <p>Aseprite</p>
+                    </div>
+                    <div>
+                        <img src="img/garageband-1672698224-logotic-brand.svg" alt="GarageBand Logo" class="garageband-logo">
+                        <p>GarageBand</p>
+                    </div>
+                </div>
+
+                <!-- ADD CLICKABLE README HERE, BETWEEN LAST LOGO AND DETAILS ELEMENT -->
+
+
             </div>
-            <div class="project-card">
-                <img src="img/ponkle.gif" alt="">
-                <h3>Plonko</h3>
-                <p>My first project with vanilla JavaScript. I just wanted to make a tiny plinko-style game. Currently making a much larger version in Godot, as part of the, "Ian's Arcade," project.</p>
-                <div class="btn-group">
-                    <div class="btn"><a href="https://eindoc.itch.io/game2">Live Demo</a></div>
-                    <div class="btn"><a href="https://github.com/eindoc/game2">Github Repot</a></div>
+            </details>
 
+            <details>
+                <summary>
+                    <img src="img/ponkle.gif" alt="Plonko logo">Plonko
+                </summary>
+                <br>
+                <div class="project-card">
+                <img src="img/ponkle.gif" alt="Plonko game gif">
+                <h3>Plonko</h3>
+                <p>My first project with vanilla JavaScript. I like to build simple games with physics when I'm dinking around in languages. Expanding on this in Godot as part of the "Ian's Arcade," project.</p>
+                <div class="btn-group-2">
+                    <div class="btn2"><a href="https://eindoc.itch.io/game2">Live Demo</a></div>
+                    <div class="btn2"><a href="https://github.com/eindoc/game2">Github Repot</a></div>
                 </div>
+                    <h2>Tools Used:</h2>
+                    <div class="tools-logos">
+                        <div>
+                            <img src="img/javascript-plain.svg" alt="JavaScript Logo" class="godot-logo">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </details>
             </div>
         </div>
     </section>
@@ -110,13 +154,13 @@
             <!-- <img src="image.JPEG" alt="front"> -->
         </div>
     </section>
-    <p class="ducksname">The ducks name is Ian.</p>
+    <p class="ducksname">The duck's name is Ian.</p>
     <footer>
         <ul>
-            <li>
+            <!-- <li>
                 <a href="#about">About</a>
 
-            </li>
+            </li> -->
             <li>
                 <a href="#projects">Projects</a>
                 

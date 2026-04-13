@@ -10,6 +10,11 @@
     src: url('./fonts/HomeVideoBold.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: "MyFont3";
+    src: url('./fonts/GlowtonePersonalUseRegular-6R14D.otf')
+}
+
 .roboto-uno {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -51,49 +56,49 @@ body::before {
 
 
 /* Header styles for nav bar */
-header {
+/* header {
     position: absolute;
     top: 3%;
     right: 5%;
     transform: translate(-50%);
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 2rem;
     background-color: #2b2b2b;
-    /* backdrop-filter: blur(8px); */
-    /* color: rgb(250, 242, 232); */
+    backdrop-filter: blur(8px);
+    color: rgb(250, 242, 232);
     padding: 0.5rem 1.5rem;
     border-radius: 0.25rem;
     z-index: 1000;
     font-family: MyFont, "Roboto", sans-serif;
 
-}
+} */
 
-.logo {
-    /* color: rgb(250, 242, 232); */
+/* .logo {
+    /* color: rgb(250, 242, 232);
     /* color: #fdf2f2;
     font-size: 1.3rem;
     font-weight: 600;
     text-wrap: nowrap;
-    transition: 0.3s ease-in-out; */
-}
+    transition: 0.3s ease-in-out;
+} */
 
-.logo:hover {
-    /* transform: scale(1.50); */
-}
+/* .logo:hover {
+    transform: scale(1.50);
+} */
 
-.logo img {
-    /* width: 4.5rem; */
-    /* transition: 0.3s ease-in-out; */
-}
+/* .logo img {
+    width: 4.5rem;
+    transition: 0.3s ease-in-out;
+} */
 
-.nav-links {
+/* .nav-links {
     display: flex;
     gap: 5rem;
-}
+} */
 
-li a {
+/* li a {
     position: relative;
     color: #fdf2f2;
     font-weight: 300;
@@ -113,7 +118,7 @@ li a::before {
 
 li a:hover::before {
     width: 100%;
-}
+} */
 
 /* .visit-btn {
     padding: 0.8rem 1.5rem;
@@ -133,14 +138,15 @@ li a:hover::before {
     transform: scale(1.03);
 } */
 
-#menu-icon {
+/* #menu-icon {
     font-size: 2rem;
     display: none;
 
-}
+} */
+
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 1rem 1rem;
     width: 100%;
     position: relative;
@@ -160,15 +166,15 @@ section {
     color:#2b2b2b
 }
 
-.about img{                                  
+/* .about img{                                  
     
 
-}
+} */
 
-.about img:hover {
+/* .about img:hover {
     
 
-}
+} */
 
 
                           /* info box styles */
@@ -239,6 +245,32 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    color: #2b2b2b;
+}
+
+.btn2 {
+    padding: 0.5rem 0.5rem;
+    border: 2px solid #fdf2f2;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2 a, .btn2 a:visited {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn2:hover {
+    background-color: #fdf2f2;
+    color: #2b2b2b;
 }
 
 .btn a,
@@ -250,7 +282,7 @@ section {
 
 .btn:hover {
     background-color: #2b2b2b;
-    color: rgb(250, 242, 232);
+    color: #fdf2f2;
     border-radius: 0.25rem;
 }
 
@@ -288,7 +320,6 @@ section {
 }
 
 
-                         /* Grid card parts */
 .section-title {
     text-align: center;
     font-size: 4rem;
@@ -360,7 +391,7 @@ body .grid-card:hover {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .project-card {
@@ -371,34 +402,91 @@ body .grid-card:hover {
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid #2b2b2b;
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+    /* border: 2px solid #2b2b2b; */
+    border-radius: 2.5rem;
+    background-color: #2b2b2b;
+    color: #fdf2f2;
+    /* cursor: pointer; */
+    /* transition: 0.3s ease-in-out; */
 }
 
-.project-card:hover {
+/* .project-card:hover {
     background-color: #2b2b2b;
     color: white;
     transform: translateY(-10px)scale(1.02);
+} */
+
+summary {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #fdfdfd5f;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1.25rem;
+    background-color: #2b2b2b7e;
+    color: #fdf2f2;
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 3px #2b2b2b);
+}
+
+summary:hover {
+    background-color: #2b2b2bcd;
+    color: #fdf2f2;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(4px 12px 5px #2b2b2b);
+}
+
+summary img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+summary h6 {
+    font-size: 1rem;
+    color: #fec107;
+    /* color: transparent; */
+    /* background: linear-gradient(to right, #ff55da, #00fffb); */
+    background-clip: text;
+    /* filter: drop-shadow(5px 5px 1px #2b2b2b); */
+    padding: 1rem;
 }
 
 .project-card img {
-    height: 20vw;
+    height: 15vw;
     border-radius: 1rem;
     padding: 1rem;
 }
 
-.project-card:hover .btn{
-    border: 3px solid white;
-    color: white;
+.project-card .tools-logos {
+    border:6px solid #fdf2f2;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    transform: scale(0.75);
+    margin: -2rem;
+    color: #fdfdfd;
+    font-size: 1.25rem;
 }
 
-.project-card:hover .btn:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: #2b2b2b;
+.project-card h2 {
+    /* border: 2px solid white; */
+    /* padding: 1rem; */
 }
+
+/* .project-card:hover .btn{
+    border: 3px solid white;
+    color: white;
+} */
+
+/* .project-card:hover .btn:hover {
+    border: 2px solid #fdf2f2;
+    background-color: #fdf2f2;
+    color: #2b2b2b;
+} */
 
 .project-card h3 {
     font-size: 2rem;
@@ -439,14 +527,15 @@ body .grid-card:hover {
 }
 
 p.ducksname {
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    transform: translate(0, -50%);
-    font-size: 1rem;
+    /* position: absolute; */
+    /* top: 2%; */
+    /* left: 5rem; */
+    /* transform: translate(0, -50%); */
+    padding: 1rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: #2b2b2b;
-    opacity: 0.25;
+    opacity: 0.4;
 }
 
 footer {
