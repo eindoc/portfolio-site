@@ -357,7 +357,6 @@ section {
 }
 
 
-
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -367,11 +366,7 @@ section {
 .grid-card {
     border: 2px solid #2b2b2b;
     border-radius: 3rem;
-<<<<<<< HEAD
     padding: 2rem;
-=======
-    padding: 1rem;
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
     display: flex;
     flex-direction: column;
     font-family: "MyFont2";
@@ -410,53 +405,41 @@ section {
 <<<<<<< HEAD
 <<<<<<< HEAD
 } */
-=======
-=======
-
-}
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
-
-}
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
 
 /* .grid-card i {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 } */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* .grid-card span {
+.grid-card span {
     font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #ff55da, #00fffb);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.75rem;
+    color: rgb(243, 239, 236);
+    filter: drop-shadow(1px 1px 1px #2b2b2b);
+}
+
+/* .grid-card span {
+    font-family: "MyFont2";
+    font-size: 2rem;
     font-weight: 500; */
     /* background: linear-gradient(to right, #ff55da, #00fffb); */
     /* background-clip: text; */
-    /* color: transparent; */
-    /* margin-bottom: 0.75rem;
-    color: rgb(243, 239, 236);
-    filter: drop-shadow(1px 1px 1px #2b2b2b);
-} */
-=======
+/* } */
+
 .grid-card span {
     font-family: "MyFont2";
     font-size: 2rem;
     font-weight: 500;
     /* background: linear-gradient(to right, #ff55da, #00fffb); */
     /* background-clip: text; */
-=======
-.grid-card span {
-    font-family: "MyFont2";
-    font-size: 2rem;
-    font-weight: 500;
-    /* background: linear-gradient(to right, #ff55da, #00fffb); */
-    /* background-clip: text; */
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
     color: transparent;
     margin-bottom: 0.75rem;
     color: #2b2b2b;
     /* filter: drop-shadow(1px 1px 1px #2b2b2b); */
-<<<<<<< HEAD
-=======
 }
 
 .grid-card:hover span {
@@ -466,52 +449,13 @@ section {
     transition: 1.2s ease-in-out;
 }
 
-.otherworkcards{
-    /* scale: 1.5;  */
-    /* color: red; */
-    font-size: 2rem;
-    /* border: 2px solid #2b2b2b; */
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.otherworkcards p{
-    border: 2px solid #2b2b2b;
-    padding: 0.5rem;
-}
-
-.otherworkcards:hover {
-    border: 2px solid #fdf2f2;
-    color: #fdf2f2;
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
-}
 
 .grid-card:hover span {
     background: linear-gradient(to right, #ff55da, #00fffb);
     background-clip: text;
     color: transparent;
-    transition: 1.2s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-
-.otherworkcards{
-    /* scale: 1.5;  */
-    /* color: red; */
-    font-size: 2rem;
-    /* border: 2px solid #2b2b2b; */
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.otherworkcards p{
-    border: 2px solid #2b2b2b;
-    padding: 0.5rem;
-}
-
-.otherworkcards:hover {
-    border: 2px solid #fdf2f2;
-    color: #fdf2f2;
-}
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
 
 .projects-grid {
     display: grid;
@@ -536,32 +480,25 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 
 /* .project-card:hover {
-=======
-.project-card:hover {
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
-=======
-.project-card:hover {
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
     background-color: #2b2b2b;
     color: #fdf2f2;
     transform: translateY(-10px)scale(1.02);
-}
+} */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 summary {
     font-size: 1.5rem;
-=======
-=======
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 2px solid #2b2b2b;
+    border-radius: 0.4rem;
+    width: 10rem;
+    align-content: center;
+}
+
 .projectcards {
     font-size: 3rem;
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
     display: flex;
     width: 10rem;
     align-items: center;
@@ -576,41 +513,28 @@ summary {
     filter: drop-shadow(6px 6px 3px #2b2b2b);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 summary:active {
-    transform: scale(0.98);
-    filter: drop-shadow(3px 3px 1px #2b2b2b);
-}
+    transform: scale(0.95);
+    /* filter: drop-shadow(3px 3px 1px #2b2b2b); */
+    box-shadow: inset 2px 2px 2px 0px #2b2b2b;
 
-/* summary:hover {
-=======
-=======
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
+}
 
 summary:hover {
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
     background-color: #2b2b2bcd;
-    /* color: #fdf2f2; */
-    transform: scale(1.2);
-    transition: 0.3s ease-in-out;
-    filter: drop-shadow(4px 12px 5px #2b2b2b);
-<<<<<<< HEAD
-<<<<<<< HEAD
-} */
-=======
-=======
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
-    border-radius: 1rem;
+    color: #fdf2f2;
+    /* transform: scale(1.06);
+    transition: 0.3s ease-in-out; */
+    /* filter: drop-shadow(4px 12px 5px #2b2b2b); */
+    cursor: pointer;
 }
->>>>>>> 20f60bfb430e1897c961f348dca39b1859634d6f
 
 /* summary img {
     width: 5rem;
     margin-bottom: 1rem;
-} */
+} 
 
-/* summary h6 { */
+/* summary h6 { */ 
     /* font-size: 1rem; */
     /* color: #fec107; */
     /* color: transparent; */
@@ -621,8 +545,8 @@ summary:hover {
 /* } */
 
 .project-card img {
-    height: 25vw;
-    /* border-radius: 1rem; */
+    height: 20vw;
+    border-radius: 1rem;
     /* padding: 1rem; */
 }
 
